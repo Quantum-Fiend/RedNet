@@ -1,0 +1,18 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package.json package-lock.json* ./
+RUN npm ci
+
+# Copy backend source
+COPY backend ./backend
+COPY tsconfig.json ./
+
+# Install TypeScript globally
+RUN npm install -g typescript ts-node
+
+EXPOSE 3001
+
+CMD ["ts-node", "backend/server.ts"]

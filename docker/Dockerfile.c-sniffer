@@ -1,0 +1,17 @@
+FROM gcc:13-bookworm
+
+WORKDIR /app
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    make \
+    libpcap-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy source code
+COPY . .
+
+# Build the library
+RUN make all
+
+CMD ["make", "test"]

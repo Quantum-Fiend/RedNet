@@ -1,0 +1,24 @@
+FROM golang:1.21-bookworm
+
+WORKDIR /app
+
+# Install build dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    make \
+    libpcap-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy go mod files
+COPY go.mod go.sum* ./
+RUN go mod download
+
+# Copy source code
+COPY . .
+
+# Build the CLI
+RUN go build -o /usr/local/bin/rednet ./cmd/rednet
+
+EXPOSE 8080
+
+CMD ["rednet", "--help"]
