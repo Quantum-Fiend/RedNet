@@ -10,7 +10,7 @@
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![Languages](https://img.shields.io/badge/Languages-6-brightgreen)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Stars](https://img.shields.io/github/stars/yourusername/RedNet?style=social)](https://github.com/yourusername/RedNet/stargazers)
+[![Stars](https://img.shields.io/github/stars/Quantum-Fiend/RedNet?style=social)](https://github.com/Quantum-Fiend/RedNet/stargazers)
 
 [Features](#-features) • [Quick Start](#-quick-start) • [Architecture](#-architecture) • [Demo](#-demo) • [Documentation](#-documentation)
 
@@ -156,7 +156,7 @@ graph TB
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/RedNet.git
+git clone https://github.com/Quantum-Fiend/RedNet.git
 cd RedNet
 
 # Start all services
