@@ -358,7 +358,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### ⭐ Star this repository if you find it useful!
 
-**Made with ❤️ for the cybersecurity community**
+**Made with ❤️ for the cybersecurity community By Tushar Singh Bisht**
 
 [⬆ Back to Top](#-rednet)
 
